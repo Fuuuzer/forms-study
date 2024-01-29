@@ -21,10 +21,11 @@ input {
   height: 40px;
   padding: 15px;
   width: 100%;
-  border-radius: 4px;
   color: #000;
   font-size: 16px;
   transition: .3s;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
 }
 
 input:focus {
@@ -33,8 +34,7 @@ input:focus {
 }
 
 .title {
-  max-width: 960px;
-  margin: 20px auto 50px auto;
+  text-align: center;
   padding: 20px;
   color: #fff;
   margin-top: 10px;
@@ -50,11 +50,7 @@ input:focus {
 }
 
 .galos {
-  width:200px;
-  position: fixed;
-  top: 70px;
-  right: 110px;
-  rotate: 10deg;
+  width:120px
 }
 
 
@@ -62,6 +58,7 @@ main {
   background: #ececec;
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
   max-width: 500px;
   padding: 20px;
   margin: 0 auto;
@@ -78,10 +75,13 @@ main {
   flex-direction: column;
   gap: 5px;
   margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .form__itens label {
   font-size: 20px;
+  font-weight: bold;
   color: #000;
 }
 
@@ -89,4 +89,54 @@ textarea {
   width: 100%;
   padding: 15px;
   border: none;
+  outline: none;
+}
+
+.nav {
+  background: #e7e7e7;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__title {
+  cursor: pointer;
+}
+
+.descryption {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.details__galos .galo-1 {
+  position: absolute;
+  left: 0;
+  top: 200px;
+}
+
+.details__galos .galo-2 {
+  position: absolute;
+  right: 150px;
+  top: 200px;
+}
+
+
+.details__galos img {
+  width: 300px;
 }

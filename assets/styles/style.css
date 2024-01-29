@@ -59,6 +59,7 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  position: relative;
   max-width: 500px;
   padding: 20px;
   margin: 0 auto;
@@ -124,19 +125,19 @@ textarea {
   font-size: 20px;
 }
 
-.details__galos .galo-1 {
+.galo-1, .galo-2 {
   position: absolute;
-  left: 0;
-  top: 200px;
 }
 
-.details__galos .galo-2 {
-  position: absolute;
-  right: 150px;
-  top: 200px;
+.galo-1 {
+  left: -270px;
+  width: 330px;
+  top: -35px;
+  rotate: 30deg;
 }
 
-
-.details__galos img {
-  width: 300px;
+.galo-2 {
+  width: 450px;
+  right: -340px;
+  top: -80px;
 }

@@ -173,12 +173,10 @@ textarea {
   width: 330px;
   top: -35px;
   rotate: 30deg;
-  z-index: -1;
 }
 
 .galo-2 {
   width: 450px;
   right: -340px;
   top: -80px;
-  z-index: -2;
 }
